@@ -1,0 +1,22 @@
+<div class="carousel">
+  <button class="arrow-left" (click)="prevSlide()">&#9664;</button>
+  <div class="carousel-item">
+    <div class="carousel-content" [class.animate-left]="animating_left" [class.animate-right]="animating_right">
+      <h3>{{ proyectos[currentIndex].titulo }}</h3>
+      <img
+        [src]="proyectos[currentIndex].urlimagen"
+        alt="{{ proyectos[currentIndex].titulo }}"
+        (click)="verProyecto(currentIndex)"
+      />
+      <h2>{{"USEDTECNOLOGY"|translate}}</h2>
+      <div class="tecnologies">
+        <img
+          *ngFor="let tecno of proyectos[currentIndex].urlstecnologias"
+          [src]="tecno"
+          alt="{{ proyectos[currentIndex].titulo }}"
+        />
+      </div>
+    </div>
+  </div>
+  <button class="arrow-right" (click)="nextSlide()">&#9654;</button>
+</div>

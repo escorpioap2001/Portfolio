@@ -1,0 +1,53 @@
+<div>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+    <h2>{{ "TITLECONTACT" | translate }}</h2>
+
+    <mat-form-field>
+      <mat-label>{{ "CONTACTNAME" | translate }}</mat-label>
+      <input matInput type="text" formControlName="name" required>
+      <mat-error *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+        Este campo es obligatorio
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ "CONTACTEMAIL" | translate }}</mat-label>
+      <input matInput type="email" formControlName="email" required>
+      <mat-error *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+        Este campo es obligatorio y debe ser un correo válido con dominio .com
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ "CONTACTMESSAGE" | translate }}</mat-label>
+      <textarea matInput formControlName="message" rows="4" required></textarea>
+      <mat-error *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+        Este campo es obligatorio
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ "CONTACTANSWER" | translate }}</mat-label>
+      <mat-select formControlName="rating" required>
+        <mat-option value="1">{{ "RATING1" | translate }}</mat-option>
+        <mat-option value="2">{{ "RATING2" | translate }}</mat-option>
+        <mat-option value="3">{{ "RATING3" | translate }}</mat-option>
+        <mat-option value="4">{{ "RATING4" | translate }}</mat-option>
+        <mat-option value="5">{{ "RATING5" | translate }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="contactForm.get('rating')?.invalid && contactForm.get('rating')?.touched">
+        Este campo es obligatorio
+      </mat-error>
+    </mat-form-field>
+
+
+    <button (click)="onSubmit($event)" [disabled]="contactForm.invalid || isSubmitting">
+      <fa-icon [icon]="faCircleArrowDown" size="2x"></fa-icon>
+    </button>
+  </form>
+</div>
+
+<div *ngIf="isSubmitting" class="loading">
+  <mat-progress-spinner mode="indeterminate" diameter="80"></mat-progress-spinner>
+  <p>Simulando el envío de contacto de información al host . . . </p>
+</div>

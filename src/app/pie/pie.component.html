@@ -1,0 +1,67 @@
+<div class="footer">
+    <mat-grid-list cols="4" rowHeight="300px">
+        <mat-grid-tile>
+            <mat-grid-tile-header>
+                <h4>{{"LINKS"|translate}}</h4>
+            </mat-grid-tile-header>
+            <mat-list class="ancho_100">
+                <mat-list-item class="enlace">
+                    <a mat-button routerLinkActive="activo" routerLink="/inicio">
+                        <fa-icon [icon]="faHouse"></fa-icon> {{"HOME"|translate}}
+                    </a>
+                </mat-list-item>
+                <mat-list-item class="enlace">
+                    <a mat-button routerLinkActive="activo" routerLink="/projects">
+                        <fa-icon [icon]="faList"></fa-icon> {{"PROJECTS"|translate}}
+                    </a>
+                </mat-list-item>
+                <mat-list-item class="enlace">
+                    <a mat-button routerLinkActive="activo" routerLink="/conocimiento">
+                        <fa-icon [icon]="faBrain"></fa-icon> {{"CONOCIMIENTO"|translate}}
+                    </a>
+                </mat-list-item>
+                <mat-list-item class="enlace">
+                    <a mat-button routerLinkActive="activo" routerLink="/contact">
+                        <fa-icon [icon]="faEnvelope"></fa-icon> {{"CONTACT"|translate}}
+                    </a>
+                </mat-list-item>
+            </mat-list>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+            <mat-grid-tile-header>
+                <h4>{{"DIRECTION"|translate}}</h4>
+            </mat-grid-tile-header>
+            <address class="ancho_100">
+                <p>Calle Santísima Cruz<br> Benifaraig, Valencia<br> España<br><br></p>
+                <i><fa-icon [icon]="faPhone"></fa-icon></i>: +697 597 497<br><br>
+                <i><fa-icon [icon]="faEnvelope"></fa-icon></i>:
+                <a href="mailto:pabloalbertpuchol@gmail.com">pabloalbertpuchol&#64;gmail.com</a>
+            </address>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="2">
+            <mat-grid-tile-header><h4>{{"REDES"|translate}}</h4></mat-grid-tile-header>
+            <div class="social-links">
+                <a mat-icon-button class="btn-git" href="https://github.com/escorpioap2001">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                </a>
+                <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/pablo-albert-puchol-0053a7230">
+                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                </a>
+                <a mat-icon-button class="btn-youtube" href="https://www.youtube.com/@Escorpio-jz9jn/videos">
+                    <fa-icon [icon]="faYoutube"></fa-icon>
+                </a>
+                <a mat-icon-button class="btn-mail" href="mailto:pabloalbertpuchol@gmail.com">
+                    <fa-icon [icon]="faEnvelope"></fa-icon>
+                </a>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <div>
+        <div class="centrado">
+            <p>© Copyright 2024 Pablo Albert Puchol</p>
+        </div>
+    </div>
+</div>

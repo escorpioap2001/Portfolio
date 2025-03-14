@@ -1,0 +1,43 @@
+{
+  "HOME": "INICIO",
+  "ANGULAR": "ANGULAR",
+  "CONOCIMIENTO": "CONOCIMIENTO",
+  "PROJECTS": "PROYECTOS",
+  "CONTACT": "CONTACTO",
+  "LINKS": "ENLACES",
+  "DIRECTION": "+ INFORMACIÓN",
+  "REDES": "REDES",
+  "ENGLISH": "Inglés",
+  "SPANISH": "Español",
+
+  "TITLEHOME": "Ingeniero multimedia",
+  "TITLE2HOME": "Especializado en el desarrollo web, computación en la nube y en la creación de aplicaciones móviles",
+  "TITLE3HOME": "Sobre Mi",
+  "ABOUT": [
+    "Desde siempre me ha fascinado la tecnología y cómo puede utilizarse para crear soluciones innovadoras que mejoren la vida de las personas.",
+    "Me gradué en Ingeniería Multimedia y continué mi formación con un máster en Tecnologías Web, Computación en la Nube y Aplicaciones Móviles en la Universidad de Valencia, donde me especialicé en el desarrollo web y de aplicaciones móviles, trabajando tanto en la interfaz de usuario como en la lógica de negocio y la integración con bases de datos.",
+    "Además, he participado en proyectos de modelado 3D, desarrollo de videojuegos y procesamiento de datos, lo que me ha permitido explorar distintas áreas tecnológicas y ampliar mis conocimientos.",
+    "Me considero una persona curiosa y en constante aprendizaje, siempre buscando perfeccionar mis habilidades y asumir nuevos desafíos que me permitan crecer profesionalmente."
+  ],
+
+  "USEDTECNOLOGY":"Tecnologias empleadas",
+  "OPENPROYECT":"Abrir proyecto en una nueva ventana",
+  "RETURN":"Volver",
+
+  "WEBDEVELOP": "Desarrollo Web",
+  "DATABASE": "Bases de datos",
+  "DEVCONTAINER":"DevOps y Contenedores",
+  "TESTSECURITY":"Testing y Seguridad",
+
+  "TITLECONTACT": "Encuesta de Contacto",
+  "CONTACTNAME": "NOMBRE",
+  "CONTACTEMAIL": "CORREO ELECTRÓNICO",
+  "CONTACTMESSAGE": "MENSAJE",
+  "CONTACTANSWER": "¿CÓMO CALIFICARÍA EL PORTFOLIO?",
+  "RATING1": "1 - Muy malo",
+  "RATING2": "2 - Malo",
+  "RATING3": "3 - Aceptable",
+  "RATING4": "4 - Bueno",
+  "RATING5": "5 - Excelente"
+
+}

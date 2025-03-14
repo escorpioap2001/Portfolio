@@ -1,0 +1,35 @@
+.columna {
+    display: block;
+    justify-content: center; 
+    width: 100%;
+}
+
+.conocimientos {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
+    text-align: center;
+    margin: 4% auto;
+    width: 100%;
+}
+
+.colmena_left, .colmena_right {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.conocimientos p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #7c55f0;
+    font-size: 2rem;
+    width: 25%;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.separador {
+    margin: 0% 20%;
+    border-bottom: 2px solid #7c55f0;
+}

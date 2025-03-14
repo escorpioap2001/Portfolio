@@ -1,0 +1,24 @@
+<div *ngIf="proyecto != null" class="proyecto-detalle">
+  <h1 class="titulo">{{ proyecto.titulo }}</h1>
+
+  <div class="imagen-container">
+    <img [src]="proyecto.urlimagen" alt="{{ proyecto.titulo }}" />
+  </div>
+
+  <p class="descripcion" [innerHTML]="proyecto.descripcion"><br /></p>
+
+  <h2>{{"USEDTECNOLOGY"|translate}}</h2>
+  <div class="tecnologias">
+    <img
+      *ngFor="let tecno of proyecto.urlstecnologias"
+      [src]="tecno"
+      alt="Tecnología"
+    />
+  </div>
+
+  <div class="botones-container">
+    <button class="abrir-nueva-ventana-btn" (click)="abrirEnNuevaVentana()">{{"OPENPROYECT"|translate}}</button>
+    <button class="volver-btn" (click)="volver()">{{"RETURN"|translate}}</button>
+  </div>
+  
+</div>

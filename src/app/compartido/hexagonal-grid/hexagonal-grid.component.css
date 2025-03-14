@@ -1,0 +1,100 @@
+.hex-grid {
+  display: grid;
+  width: fit-content;
+}
+
+.hex-grid.invertido {
+  transform: rotateY(180deg); /* Solo se invierte el grid */
+}
+
+.hex-row {
+  display: flex;
+}
+
+.hex-row:nth-child(odd) {
+  transform: translateX(90px); /* Ajusta según tamaño */
+}
+
+/* 🔶 HEXÁGONOS 🔶 */
+.hex {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: visible;
+  margin: -2% 0%;
+}
+
+.hex-in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-grid.invertido .hex-in {
+  transform: rotateY(180deg); /* Revertir el giro solo dentro */
+}
+
+.hex-in img {
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.hex-in:hover img {
+  padding: auto;
+  margin: auto;
+  filter: brightness(5%);
+  transform: scale(1.2);
+}
+
+.hex-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.hex-in:hover .hex-text {
+  opacity: 1;
+}
+
+.hex-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hex-bg-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(90%);
+}
+
+.hex-content {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}

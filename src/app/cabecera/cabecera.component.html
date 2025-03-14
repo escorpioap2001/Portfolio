@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <span><img class="logo" src="assets/images/logo.png"></span>
+    <a class="enlace" mat-button routerLinkActive="activo" routerLink="/inicio"><fa-icon [icon]="faHouse"></fa-icon> {{"HOME"|translate}} </a>
+    <a class="enlace" mat-button routerLinkActive="activo" routerLink="/projects"><fa-icon [icon]="faList"></fa-icon> {{"PROJECTS"|translate}} </a>
+    <a class="enlace" mat-button routerLinkActive="activo" routerLink="/conocimiento"><fa-icon [icon]="faBrain"></fa-icon> {{"CONOCIMIENTO"|translate}} </a>
+    <a class="enlace" mat-button routerLinkActive="activo" routerLink="/contact"><fa-icon [icon]="faEnvelope"></fa-icon> {{"CONTACT"|translate}} </a>
+    <div class="right-corner">
+        <div class="language">
+        <a mat-button (click)="switchLanguage('es')" [ngClass]="{ 'oscura': spanish }"><img src="assets/images/español.png" height="30" width="30"></a>
+        <a mat-button (click)="switchLanguage('en')" [ngClass]="{ 'oscura': english }"><img src="assets/images/english.png" height="30" width="30"></a>
+        </div>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,17 @@
+<div class="container_horizontal">
+  <div class="container_vertical">
+    <h1 class="titulo">
+      {{ "TITLEHOME" | translate }}
+    </h1>
+    <p class="intro">{{ "TITLE2HOME" | translate }}</p>
+  </div>
+  <img src="assets/images/inicio.jpg" />
+</div>
+
+<div class="about">
+  <h1><< {{ "TITLE3HOME" | translate }} />></h1>
+  <br>
+  <div>
+    <p *ngFor="let line of 'ABOUT' | translate">{{ line }}<br /></p>
+  </div>
+</div>

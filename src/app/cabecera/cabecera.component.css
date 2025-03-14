@@ -1,0 +1,93 @@
+.jumbotron {
+  margin: 0px auto;
+  padding: 0px 0px;
+  background: #c5c1d1;
+  color: floralwhite;
+  min-height: 150px;
+}
+
+img.logo {
+  margin-left: 10px;
+  margin-right: 20px;
+  height: 65px;
+  width: 55x;
+  transition: transform 0.5s ease-in-out;
+}
+
+img.logo:hover {
+  transform: rotate(360deg);
+}
+
+img {
+  margin-top: 5px;
+}
+
+.activo {
+  background: #673ab7;
+  color: black;
+}
+
+mat-toolbar[color="primary"] {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+a {
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 20px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.right-corner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.language {
+  background: #c9c1da;
+  border-radius: 23px;
+  border-width: 3px;
+  margin-right: 23px;
+  padding: 5px 0px;
+}
+
+.language > a{
+  border-radius: 30px;
+  border-width: 1px;
+  padding: 30px 0px;
+}
+
+a img {
+  
+  padding-right: 0px;
+  padding-left: 0px;
+  transition: filter 0.3s ease;
+}
+
+a:hover img {
+  filter: brightness(70%);
+}
+
+.oscura {
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+}
+
+.enlace {
+  padding: 10px 30px;
+}
+
+.enlace:hover {
+  filter: brightness(200%);
+}
+
+.enlace:active {
+  filter: brightness(70%);
+  color: #673ab7;
+}

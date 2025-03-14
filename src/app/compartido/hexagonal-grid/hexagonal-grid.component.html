@@ -1,0 +1,16 @@
+<div class="hex-grid" [class.invertido]="invertido">
+  <div class="hex-row" *ngFor="let row of groupImagesIntoRows(); let i = index">
+    <div class="hex" *ngFor="let image of row; let j = index">
+      <div class="hex-in">
+        <img
+          class="hex-bg-bg"
+          [src]="getCellImage(image.difficulty)"
+          alt="Celda de fondo"
+        />
+        <img class="hex-bg" [src]="celda" alt="Celda de fondo" />
+        <img class="hex-content" [src]="image.src" alt="Imagen" />
+        <div class="hex-text">{{ image.text }}</div>
+      </div>
+    </div>
+  </div>
+</div>

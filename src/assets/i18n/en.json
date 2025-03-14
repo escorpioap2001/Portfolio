@@ -1,0 +1,44 @@
+{
+  "HOME": "HOME",
+  "ANGULAR": "ANGULAR",
+  "CONOCIMIENTO": "KNOWLEDGE",
+  "PROJECTS": "PROJECTS",
+  "CONTACT": "CONTACT",
+  "LINKS": "LINKS",
+  "DIRECTION": "+ INFORMATION",
+  "REDES": "WEBSITES",
+  "ENGLISH": "English",
+  "SPANISH": "Spanish",
+
+  "TITLEHOME": "Multimedia Engineer",
+  "TITLE2HOME": "Specialized in web development, cloud computing, and mobile application creation.",
+  "TITLE3HOME": "About me",
+  "ABOUT": [
+    "I have always been fascinated by technology and how it can be used to create innovative solutions that improve people's lives.",
+    "I graduated in Multimedia Engineering and furthered my education with a master's degree in Web Technologies, Cloud Computing, and Mobile Applications at the University of Valencia, where I specialized in web and mobile application development, working on both the user interface and business logic, as well as database integration.",
+    "Additionally, I have been involved in projects related to 3D modeling, game development, and data processing, allowing me to explore different technological fields and expand my knowledge.",
+    "I consider myself a curious person who is constantly learning, always seeking to refine my skills and take on new challenges that help me grow professionally."
+  ],
+
+  "USEDTECNOLOGY":"Technologies used",
+  "OPENPROYECT":"Open project in a new window",
+  "RETURN":"Return",
+
+  "WEBDEVELOP": "Web development",
+  "DATABASE":"Databases",
+  "DEVCONTAINER":"DevOps and Containers",
+  "TESTSECURITY":"Testing and Security",
+
+  "TITLECONTACT": "Contact Survey",
+  "CONTACTNAME": "NAME",
+  "CONTACTEMAIL": "EMAIL",
+  "CONTACTMESSAGE": "MESSAGE",
+  "CONTACTANSWER": "HOW WHOULD YOU DESCRIBE THIS WEB?",
+  "RATING1": "1 - Very Bad",
+  "RATING2": "2 - Bad",
+  "RATING3": "3 - Acceptable",
+  "RATING4": "4 - Good",
+  "RATING5": "5 - Excellent"
+
+  
+}

@@ -1,0 +1,87 @@
+<h1 class="titulo">{{"TITLEANGULAR"|translate}}</h1>
+
+<div>
+  <div class="pruebas-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST1"|translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <img class="pokemon" src="assets/images/pokeball.png" />
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST2"|translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="loader">
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST3"|translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="swatch">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST4"|translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <input
+          class="pristine"
+          type="checkbox"
+          name="toggle"
+          value="on"
+          (click)="onToggleClick($event)"
+        />
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST5"|translate}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="avatar">
+          <img src="assets/images/logo.png" alt="PablerasXP" />
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{"TEST6"|translate}}</mat-card-title>
+      </mat-card-header>
+      <div class="gato">
+        <mat-card-content>
+          <div class="cat">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+              <div class="eye eye--left">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="eye eye--right">
+                <div class="eye-pupil"></div>
+              </div>
+              <div class="muzzle"></div>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="columna">
+  <div *ngFor="let categoria of getColumnas(); let i = index">
+    <div class="conocimientos">
+      <div class="colmena_left">
+        <app-hexagonal-grid
+          [images]="categoria[0].conocimientos"
+        ></app-hexagonal-grid>
+      </div>
+
+      <p>{{ categoria[0].nombre }}{{ categoria[1].nombre ? '  &  ' + categoria[1].nombre : '' }}</p>
+
+      <div class="colmena_right">
+        <app-hexagonal-grid
+          [images]="categoria[1].conocimientos"
+          [invertido]="true"
+        ></app-hexagonal-grid>
+      </div>
+    </div>
+    <div  class="separador" *ngIf="i < getColumnas().length - 1">
+    </div>
+  </div>
+</div>
