@@ -1,6 +1,5 @@
 import { Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
-import { TextestComponent } from "./textest/textest.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ConocimientoComponent } from "./conocimiento/conocimiento.component";
 import { ProjectsComponent } from "./projects/projects.component";
